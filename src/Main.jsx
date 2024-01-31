@@ -7,7 +7,7 @@ const Main = () => {
   const [color, setColor] = useState('Green')
   const [ancho, setAncho] = useState('100px');
   const [alto, setAlto] = useState('100px');
-  const moveSquare = (direction, pixeles) => {
+  const moveSphere = (direction, pixeles) => {
     switch (direction) {
       case 'UP':
         setPosition({ ...position, top: position.top - pixeles });
@@ -114,25 +114,25 @@ const Main = () => {
     {
       command: 'Move up.',
       callback: () => {
-        moveSquare('UP', 30);
+        moveSphere('UP', 30);
       }
     },
     {
       command: 'Move down.',
       callback: () => {
-        moveSquare('DOWN', 30);
+        moveSphere('DOWN', 30);
       }
     },
     {
       command: 'Move left.',
       callback: () => {
-        moveSquare('LEFT', 30);
+        moveSphere('LEFT', 30);
       }
     },
     {
       command: 'Move right.',
       callback: () => {
-        moveSquare('RIGHT', 30);
+        moveSphere('RIGHT', 30);
       }
     },
   ];

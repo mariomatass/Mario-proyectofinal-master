@@ -175,6 +175,7 @@ const Main = () => {
             width: ancho,
             height: alto,
             backgroundColor: color,
+            borderRadius: '50%',
             position: 'relative',
             top: `${position.top}px`,
             left: `${position.left}px`,

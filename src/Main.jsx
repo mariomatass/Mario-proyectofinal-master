@@ -92,7 +92,7 @@ const Main = () => {
       command: 'Reset.',
       callback: () => {
         setPosition({ top: 0, left: 0 });
-        setColor('blue');
+        setColor('green');
         setAncho('100px');
         setAlto('100px');
       }
